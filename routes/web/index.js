@@ -14,7 +14,7 @@ var checkSession = function(req,res,next){
 	if(req.session.email){
 		next();
 	}else{
-		res.render('login');
+		res.redirect('login');
 	}
 
 };
@@ -23,7 +23,8 @@ var checkSesLog = function(req,res,next){
 	if(!req.session.email){
 		next();
 	}else{
-		res.redirect('/welcome');
+
+        res.redirect('/welcome');
 	}
 
 };

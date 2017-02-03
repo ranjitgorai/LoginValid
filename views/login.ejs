@@ -25,6 +25,8 @@
 	  </div>
 	  
 	  <button type="submit" class="btn btn-success" id="login-btn">Login</button>
+	  <font color="#FF0000">Not Registered?</font>
+  <button type="button" class="btn btn-link" style="text-decoration:none" id="submit-btn"><strong>Signup here</strong></button>
 	</form>
 	
 </div>
@@ -77,6 +79,10 @@ success : function(result){
 
         
 	});
-	  	
+
+	$('#submit-btn').click(function(e){
+			window.location.href="/signup";
+
+	});  	
 </script>
 </body>

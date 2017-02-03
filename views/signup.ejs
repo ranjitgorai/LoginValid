@@ -50,6 +50,8 @@
 
 <div class="form-footer" align="center">
 <button type="submit"  name="submit" class="btn btn-success" id="submit_btn">Submit</button>
+<font color="#FF0000">Already Exist?</font>
+  <button type="button" class="btn btn-link" style="text-decoration:none" id="log-btn"><strong>Login here</strong></button>
 </div> 
 
     
@@ -90,9 +92,10 @@ $.ajax({
 	        if(!result.error)
 	        {
 	        	alert("success");
+	        	window.location.href="/login";
 	        }
 	        else{
-	        	alert("error");
+	        	alert("User already exist");
 	        }
 	}
 
@@ -103,7 +106,10 @@ $.ajax({
 
 });
 
+$('#log-btn').click(function(e){
+			window.location.href="/login";
 
+	});
 
 
 </script>
