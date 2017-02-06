@@ -7,7 +7,7 @@ var welcome = require('./welcome');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'LogicSquare Technologies' });
+  res.render('index', { title: 'Ranjit' });
 });
 
 var checkSession = function(req,res,next){
